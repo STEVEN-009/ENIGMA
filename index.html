@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador</title>
+    <link rel="stylesheet" href="CSS/estilos.css">
+    <link rel="stylesheet" href="CSS/reset.css">
+    <link rel="shortcut icon" href="Imagenes/Neon Letter E.H03.watermarked.2k.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</head>
+<body>
+    <header>
+        <div class="contenedor_titulo">
+            <div class="titulo_header">
+                <h1>ENIGMA</h1>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="contenedor">
+            <div class="encriptador">
+                <section class="encriptador_section">
+                    <div class="texto">
+                        <textarea id="texto" type="text" placeholder="Ingrese el texto aquí"></textarea>
+                    </div>
+                    <div class="advertencia">
+                        <div class="advertencia_cont">
+                            <img class="vector" src="Imagenes/Vector.png" alt="">  
+                            <p>Solo letras minúsculas y sin acentos</p>
+                        </div>
+                    </div>
+                    <div class="botones">
+                        <button id="enc">Encriptar</button>
+                        <button id="des">Desencriptar</button>
+                    </div>
+                </section>
+                
+                <div class="text_out_sec">
+                    <div class="out_content">
+                        <div class="content" id="default">
+                            <div class="text_out_img">
+                                <img src="Imagenes/Muñeco.png" alt="Imagen de animada">
+                            </div>
+                            <p>Ningún mensaje fue encontrado</p>
+                            <p>Ingresa el texto que desees encriptar o desencriptar.</p>
+                        </div>
+                        <div class = "content invisible" id="result">
+                            <textarea name="text_out_area" id="resultado" disabled></textarea>
+                            <button id="copiar">Copiar</button>
+                        </div>
+                    </div>  
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer_contenedor">
+            <div class="footer">
+                <p> &#169 Todos los Derechos Reservados para | Steven Veloza</p>
+            </div>
+        </div>
+    </footer>
+    <script src="Script/script.js"></script>
+</body>
+
+</html>
